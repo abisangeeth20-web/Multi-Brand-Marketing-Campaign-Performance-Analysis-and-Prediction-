@@ -22,7 +22,7 @@ Exact figures for every model are in [reports/Model_Evaluation_Report.md](report
 ├── purplle_campaign_data_with_nulls.csv
 ├── tira_campaign_data_with_nulls.csv
 ├── run_pipeline.py                           one command: clean → features → EDA → train → evaluate
-├── app.py                                    Streamlit app (predict · dashboard · model performance)
+├── app.py                                    Streamlit app (predict · dashboard · insights · model performance)
 ├── requirements.txt
 ├── src/
 │   ├── config.py                             paths, column groups, palette
@@ -122,4 +122,5 @@ See the EDA and model-evaluation reports. In short, **cost per conversion** is t
 * **Predict:** enter a campaign profile, channels, funnel and costs. The app shows predicted revenue, the Profit/Loss prediction with its probability, a funnel chart, spend vs revenue, and a break-even check.
 * The app warns when the planned total spend falls outside the training range (₹50K – ₹3L per campaign), because tree models don't extrapolate.
 * **Dashboard:** interactive Plotly EDA with brand, campaign-type, audience and date filters.
+* **Insights:** key findings computed live from the data (cost-per-conversion bands, revenue drivers, brand / type / channel comparison, channel count, model drivers), plus business recommendations.
 * **Model performance:** metrics tables, comparison charts, confusion matrix and feature importance.

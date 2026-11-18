@@ -1,0 +1,201 @@
+{
+  "regression": {
+    "best_model": "Random Forest",
+    "inputs": [
+      "Brand",
+      "Campaign_Type",
+      "Target_Audience",
+      "Language",
+      "Customer_Segment",
+      "Channel_Used",
+      "Date",
+      "Duration",
+      "Impressions",
+      "Clicks",
+      "Leads",
+      "Conversions",
+      "Acquisition_Cost",
+      "Engagement_Score",
+      "ROI"
+    ],
+    "test_metrics": {
+      "R2": 0.9990116526646502,
+      "RMSE": 15334.841275424897,
+      "MAE": 4930.900432250048,
+      "MSE": 235157356.94247508,
+      "Train_R2": 0.9996941911900215,
+      "Params": "{\"n_estimators\": 30, \"min_samples_leaf\": 3, \"max_features\": 0.8, \"max_depth\": 20}",
+      "Seconds": 104.6
+    },
+    "importance": {
+      "Conversions": 0.94779,
+      "ROI": 0.86396,
+      "Acquisition_Cost": 0.397,
+      "Clicks": 0.00102,
+      "Leads": 0.00079,
+      "Date": 4e-05,
+      "Channel_Used": 3e-05,
+      "Language": 1e-05,
+      "Engagement_Score": 1e-05,
+      "Impressions": 0.0,
+      "Campaign_Type": 0.0,
+      "Target_Audience": 0.0,
+      "Customer_Segment": -0.0,
+      "Brand": -0.0,
+      "Duration": -1e-05
+    }
+  },
+  "classification": {
+    "best_model": "Logistic Regression",
+    "inputs": [
+      "Brand",
+      "Campaign_Type",
+      "Target_Audience",
+      "Language",
+      "Customer_Segment",
+      "Channel_Used",
+      "Date",
+      "Duration",
+      "Impressions",
+      "Clicks",
+      "Leads",
+      "Conversions",
+      "Acquisition_Cost",
+      "Engagement_Score",
+      "Revenue"
+    ],
+    "test_metrics": {
+      "Accuracy": 0.9996368698178297,
+      "Precision": 0.9998407516522017,
+      "Recall": 0.9996815540164,
+      "F1": 0.9997611464968152,
+      "ROC_AUC": 0.9999995328199698,
+      "Train_Accuracy": 0.9996898263027295,
+      "Params": "{\"C\": 1000}",
+      "Seconds": 7.1
+    },
+    "confusion_matrix": [
+      [
+        7920,
+        4
+      ],
+      [
+        8,
+        25114
+      ]
+    ],
+    "importance": {
+      "Acquisition_Cost": 0.34361,
+      "Revenue": 0.33528,
+      "Conversions": 0.157,
+      "Clicks": 0.0025,
+      "Impressions": 0.0015,
+      "Engagement_Score": 0.00039,
+      "Leads": 0.00028,
+      "Customer_Segment": 0.00022,
+      "Target_Audience": 6e-05,
+      "Brand": 0.0,
+      "Campaign_Type": 0.0,
+      "Language": 0.0,
+      "Date": 0.0,
+      "Duration": 0.0,
+      "Channel_Used": -0.00017
+    }
+  },
+  "prelaunch_benchmark": {
+    "revenue_r2_without_roi": 0.7701352459824777,
+    "profit_accuracy_without_revenue_roi": 0.9093687586999939,
+    "profit_majority_baseline": 0.7602190885432427
+  },
+  "train_rows": 132184,
+  "test_rows": 33046,
+  "channels": [
+    "Email",
+    "Facebook",
+    "Google",
+    "Instagram",
+    "WhatsApp",
+    "YouTube"
+  ],
+  "categories": {
+    "Brand": [
+      "Nykaa",
+      "Purplle",
+      "Tira"
+    ],
+    "Campaign_Type": [
+      "Email",
+      "Influencer",
+      "Paid Ads",
+      "SEO",
+      "Social Media"
+    ],
+    "Target_Audience": [
+      "College Students",
+      "Premium Shoppers",
+      "Tier 2 City Customers",
+      "Working Women",
+      "Youth"
+    ],
+    "Language": [
+      "Bengali",
+      "English",
+      "Hindi",
+      "Tamil"
+    ],
+    "Customer_Segment": [
+      "College Students",
+      "Premium Shoppers",
+      "Tier 2 City Customers",
+      "Working Women",
+      "Youth"
+    ]
+  },
+  "input_ranges": {
+    "Duration": [
+      5.0,
+      17.0,
+      30.0
+    ],
+    "Impressions": [
+      3221.0,
+      55090.5,
+      157546.0
+    ],
+    "Clicks": [
+      170.0,
+      3902.0,
+      19196.0
+    ],
+    "Leads": [
+      48.0,
+      1475.0,
+      8876.0
+    ],
+    "Conversions": [
+      17.0,
+      776.0,
+      6686.0
+    ],
+    "Acquisition_Cost": [
+      8.18,
+      208.505,
+      15473.16
+    ],
+    "Engagement_Score": [
+      1.73,
+      13.58,
+      37.44
+    ],
+    "ROI": [
+      -0.99,
+      1.23,
+      79.32
+    ],
+    "Revenue": [
+      3895.0,
+      359250.0,
+      4579910.0
+    ]
+  }
+}

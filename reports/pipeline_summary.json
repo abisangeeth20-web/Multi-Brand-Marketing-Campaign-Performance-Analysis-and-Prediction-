@@ -1,0 +1,53 @@
+{
+  "cleaning_log": {
+    "raw_rows": 166665,
+    "raw_nulls": {
+      "Brand": 0,
+      "Campaign_ID": 5417,
+      "Campaign_Type": 8358,
+      "Target_Audience": 8172,
+      "Duration": 8323,
+      "Channel_Used": 8282,
+      "Impressions": 8224,
+      "Clicks": 8224,
+      "Leads": 8090,
+      "Conversions": 8000,
+      "Revenue": 8304,
+      "Acquisition_Cost": 8161,
+      "ROI": 8298,
+      "Language": 8299,
+      "Engagement_Score": 8081,
+      "Customer_Segment": 8175,
+      "Date": 8099
+    },
+    "campaign_id_reconstructed": 5417,
+    "campaign_id_mismatch": 0,
+    "duplicates_removed": 0,
+    "roi_values_corrected": 25,
+    "engagement_values_corrected": 0,
+    "recovered_via_roi_identity": 23279,
+    "recovered_via_engagement_identity": 34345,
+    "rows_dropped_unrecoverable_financials": 1435,
+    "funnel_filled_by_median_ratio": 2320,
+    "duration_median_filled": 8254,
+    "categorical_mode_filled": {
+      "Campaign_Type": 8283,
+      "Target_Audience": 8112,
+      "Language": 8225,
+      "Customer_Segment": 8105
+    },
+    "channel_unknown_filled": 8221,
+    "date_sampled_filled": 8018,
+    "clean_rows": 165230,
+    "remaining_nulls": 0
+  },
+  "rows_after_cleaning": 165230,
+  "profit_share": 0.7602190885432427,
+  "regression_best": "Random Forest",
+  "classification_best": "Logistic Regression",
+  "prelaunch_benchmark": {
+    "revenue_r2_without_roi": 0.7701352459824777,
+    "profit_accuracy_without_revenue_roi": 0.9093687586999939,
+    "profit_majority_baseline": 0.7602190885432427
+  }
+}

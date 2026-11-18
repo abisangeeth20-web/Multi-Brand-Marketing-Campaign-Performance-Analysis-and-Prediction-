@@ -1,0 +1,8 @@
+# Large uncompressed outputs (> 25 MB) - gzip copies (*.csv.gz) are committed instead.
+# Regenerate with: python run_pipeline.py
+data/processed/cleaned_campaign_data.csv
+data/processed/feature_engineered_campaign_data.csv
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

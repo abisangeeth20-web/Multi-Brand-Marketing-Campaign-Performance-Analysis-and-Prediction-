@@ -1,0 +1,5 @@
+# Extra tools for running / rebuilding the notebook locally
+-r requirements.txt
+nbformat>=5.10
+nbconvert>=7.16
+ipykernel>=6.29
